@@ -5,14 +5,19 @@
   --principal-color:#6A8D6F;
   --socondary-color:#FBF5ED;
   --tertiary-color:#8C6E5F;
+
   --font-principal-color:#6A8D6F;
   --font-socondary-color:#FBF5ED;
   --font-tertiary-color:#CBCBCB;
+  --font-tertiarySelect-color:#614c41;
   --font-quarter-color:#8C6E5F;
-  --font-subQuarter-Color:#8C6E5F;
+  --font-subQuarter-Color:#977C6D;
+  --font-white-color:#f1f1f1;
+
   --back-principal-color:#FEFDFB;
   --back-socondary-color:#FBF5ED;
-  --back-tertiary-color:#;
+  
+  --box-shadown-principal-color:hsla(20, 19%, 46%, 95%);
 
 }
 
@@ -59,7 +64,7 @@ header > section{
   color: var(--font-principal-color);
 }
 .containerTitleAndDesc > div:first-child > p:last-child {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 4.05rem;
   font-weight: bold;
   text-align: right;
@@ -90,6 +95,7 @@ header > section{
 
   width: 50.4rem;
   height: 73.6rem;
+  box-shadow: 1rem 1rem 0rem var(--box-shadown-principal-color);
 
   background-color: var(--back-socondary-color);
 }
@@ -100,9 +106,58 @@ header > section{
   flex-direction: column;
   justify-content: space-around;
 }
+.containerForm > form > h3, .containerForm > form > div, .containerForm > form > input:last-child {
+  width: calc(100% - (2.6rem * 2));
+  align-self: center;
+}
 .containerForm > form > h3 {
   font-size: 3.5rem;
   font-weight: bold;
+  text-transform: uppercase;
 
   color: var(--font-quarter-color);
 }
+.containerForm > form > div {
+  display: flex;
+  flex-direction: column;
+}
+.containerForm > form > div > label {
+  font-size: 2.8rem;
+  font-weight: bold;
+
+  color: var(--font-subQuarter-Color);
+}
+.containerForm > form > div > input {
+  width: 100%;
+  height: 5rem;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--tertiary-color);
+  border-radius: 0.2rem;
+}
+.containerForm > form > div > input::placeholder, .containerForm > form > div > input {
+  font-family: 'lato';
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-indent: 0.8rem;
+}
+.containerForm > form > div > input::placeholder {
+  color: var(--font-tertiary-color);
+
+} .containerForm > form > div > input {
+  color: var(--font-tertiarySelect-color);
+}
+.containerForm > form > input:last-child {
+  font-family: 'lato';
+  height: 7.9rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  border: none;
+  color: var(--font-white-color);
+  background-color: var(--font-principal-color);
+}
+
+/* Section "O que vai aprender?" */
