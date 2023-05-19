@@ -14,6 +14,7 @@
   --font-subQuarter-Color:#977C6D;
   --font-sub2Quarter-Color:#A28576;
   --font-white-color:#f1f1f1;
+  --font-black-color:#030303;
 
   --back-principal-color:#FEFDFB;
   --back-socondary-color:#FBF5ED;
@@ -198,15 +199,15 @@ width: 36.8rem;
   box-shadow: 0.8rem 0.8rem 0rem var(--box-shadown-card-oquevai-color);
 }
 #oQueVaiAperender figure:first-child > div {
-  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url(../assets/cards/prod1.jpeg);
+  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url(../assets/cards/oQueVaiAprender/prod1.jpeg);
   background-size: cover;
 }
 #oQueVaiAperender figure:nth-child(2) > div {
-  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url(../assets/cards/prod2.jpeg);
+  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url(../assets/cards/oQueVaiAprender/prod2.jpeg);
   background-size: cover;
 }
 #oQueVaiAperender figure:last-child > div {
-  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url(../assets/cards/prod3.jpeg);
+  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url(../assets/cards/oQueVaiAprender/prod3.jpeg);
   background-size: cover;
 }
 #oQueVaiAperender figure > figcaption {
@@ -270,4 +271,77 @@ width: 36.8rem;
   font-size: 3.2rem;
   font-weight: 600;
 
+}
+
+/* Section "Conheça os Ambientes" */
+
+#conhecaOsAmbientes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#conhecaOsAmbientes > div {
+  width: calc(100% - (15rem * 2));
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+#conhecaOsAmbientes > div > section {
+  width: 100%;
+  height: 35.2rem;
+  margin-bottom: 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+#conhecaOsAmbientes section > div.imgConhecaOsAmbientes {
+  width: 50%;
+  height: 100%;
+}
+.imgConhecaOsAmbientes:nth-child(1) {
+  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url('../assets/cards/conhecaOsAmbientes/prod1.jpeg');
+  background-size: cover;
+}
+.imgConhecaOsAmbientes:nth-child(2) {
+  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url('../assets/cards/conhecaOsAmbientes/prod2.jpeg');
+  background-size: cover;
+}
+.imgConhecaOsAmbientes:nth-child(3) {
+  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url('../assets/cards/conhecaOsAmbientes/prod3.jpeg');
+  background-size: cover;
+}
+#conhecaOsAmbientes section > div.title {
+  width: 43%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: var(--font-principal-color);
+}
+#conhecaOsAmbientes section > div.text {
+  width: 50%;
+  height: 100%;
+  transform: translateX(14%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#conhecaOsAmbientes section > div.text > h4{
+  font-size: 5.23rem;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+
+  color: var(--font-principal-color);
+}
+#conhecaOsAmbientes section > div.text > ul{
+  font-size: 2.9rem;
+  font-weight: 400;
+  line-height: 118%;
+  list-style: disc;
+  margin-left: 3.5rem;
+
+  color: var(--font-black-color);
 }
