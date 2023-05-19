@@ -180,10 +180,10 @@ header > section{
   color: var(--font-quarter-color);
 }
 #oQueVaiAperender > div:last-child {
-  width: calc(100% - 22rem);
+  width: calc(100% - (15rem * 2));
   height: 54.3rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 #oQueVaiAperender figure {
 width: 36.8rem;
@@ -225,7 +225,7 @@ width: 36.8rem;
 
 }
 #local > .containerLocal {
-  width: 90%;
+  width: calc(100% - 15rem);
   height: 65rem;
 
   display: flex;
