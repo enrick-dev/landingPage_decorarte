@@ -12,12 +12,14 @@
   --font-tertiarySelect-color:#614c41;
   --font-quarter-color:#8C6E5F;
   --font-subQuarter-Color:#977C6D;
+  --font-sub2Quarter-Color:#A28576;
   --font-white-color:#f1f1f1;
 
   --back-principal-color:#FEFDFB;
   --back-socondary-color:#FBF5ED;
   
   --box-shadown-principal-color:hsla(20, 19%, 46%, 95%);
+  --box-shadown-card-oquevai-color:#5B483E;
 
 }
 
@@ -94,7 +96,7 @@ header > section{
   justify-self: flex-end;
 
   width: 50.4rem;
-  height: 73.6rem;
+  height: 97%;
   box-shadow: 1rem 1rem 0rem var(--box-shadown-principal-color);
 
   background-color: var(--back-socondary-color);
@@ -161,3 +163,55 @@ header > section{
 }
 
 /* Section "O que vai aprender?" */
+
+#oQueVaiAperender {
+  height: 84.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#oQueVaiAperender > div:first-child {
+  font-size: 4.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: var(--font-quarter-color);
+}
+#oQueVaiAperender > div:last-child {
+  width: calc(100% - 22rem);
+  height: 54.3rem;
+  display: flex;
+  justify-content: space-around;
+}
+#oQueVaiAperender figure {
+width: 36.8rem;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+}
+#oQueVaiAperender figure > div {
+  width: 100%;
+  height: 36.8rem;
+  box-shadow: 0.8rem 0.8rem 0rem var(--box-shadown-card-oquevai-color);
+}
+#oQueVaiAperender figure:first-child > div {
+  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url(../assets/cards/prod1.jpeg);
+  background-size: cover;
+}
+#oQueVaiAperender figure:nth-child(2) > div {
+  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url(../assets/cards/prod2.jpeg);
+  background-size: cover;
+}
+#oQueVaiAperender figure:last-child > div {
+  background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url(../assets/cards/prod3.jpeg);
+  background-size: cover;
+}
+#oQueVaiAperender figure > figcaption {
+  width: 100%;
+  font-size: 3.2rem;
+  font-weight: 400;
+
+  color: var(--font-sub2Quarter-Color);
+}
