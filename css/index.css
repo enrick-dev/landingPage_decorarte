@@ -20,6 +20,7 @@
   
   --box-shadown-principal-color:hsla(20, 19%, 46%, 95%);
   --box-shadown-card-oquevai-color:#5B483E;
+  --box-shadown-local-color:hsla(21, 19%, 35%, 95%);
 
 }
 
@@ -214,4 +215,59 @@ width: 36.8rem;
   font-weight: 400;
 
   color: var(--font-sub2Quarter-Color);
+}
+
+#local {
+  height: 89rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+#local > .containerLocal {
+  width: 90%;
+  height: 65rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 1rem 1rem 0rem var(--box-shadown-local-color);
+
+  background: linear-gradient(hsla(20, 19%, 15%, 70%), hsla(20, 19%, 15%, 70%)), url('../assets/backgrounds/backgroundLocal.jpeg');
+  background-size: cover;
+  background-position: center;
+
+  
+  color: var(--font-white-color);
+}
+.containerLocal > div:first-child {
+  display: flex;
+  flex-direction: column;
+  width: 47.4rem;
+}
+.containerLocal > div:first-child > h3 {
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+
+  color: var(--font-principal-color);
+}
+.containerLocal > div:first-child > p {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.containerLocal > div:last-child {
+  display: flex;
+  align-items: center;
+}
+.containerLocal > div:last-child > img {
+  width: 13.2rem;
+  height: 13.2rem;
+}
+.containerLocal > div:last-child > p {
+  font-size: 3.2rem;
+  font-weight: 600;
+
 }
