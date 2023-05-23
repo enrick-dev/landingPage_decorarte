@@ -16,6 +16,8 @@
   --font-sub3Quarter-Color:#3D3029;
   --font-white-color:#f1f1f1;
   --font-black-color:#030303;
+  --font-gray-color:#4D4D4D;
+  --font-lightgray-color:#A8A8A8;
 
   --back-principal-color:#FEFDFB;
   --back-socondary-color:#FBF5ED;
@@ -426,4 +428,36 @@ width: 36.8rem;
 
   color: var(--font-white-color);
   background-color: var(--principal-color);
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+footer > div > h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--font-principal-color);
+  margin-bottom: 2rem;
+}
+footer > div > h4 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: var(--font-gray-color);
+}
+footer > div > p {
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: var(--font-lightgray-color);
 }
