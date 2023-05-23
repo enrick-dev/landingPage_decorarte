@@ -13,15 +13,20 @@
   --font-quarter-color:#8C6E5F;
   --font-subQuarter-Color:#977C6D;
   --font-sub2Quarter-Color:#A28576;
+  --font-sub3Quarter-Color:#3D3029;
   --font-white-color:#f1f1f1;
   --font-black-color:#030303;
 
   --back-principal-color:#FEFDFB;
   --back-socondary-color:#FBF5ED;
+  --back-green-color:#6A8D6F;
   
-  --box-shadown-principal-color:hsla(20, 19%, 46%, 95%);
-  --box-shadown-card-oquevai-color:#5B483E;
-  --box-shadown-local-color:hsla(21, 19%, 35%, 95%);
+  --box-shadown-principal-color:hsla(20, 19%, 46%, 0.95);
+  --box-shadown-card-oquevai-color:hsla(21, 19%, 30%, 0.95);
+  --box-shadown-local-color:hsla(21, 19%, 35%, 0.95);
+  --box-shadown-card-conhecaos-color:hsla(21, 19%, 30%, 0.95);
+  --box-shadown-inscrevase-color: hsla(21, 19%, 30%, 0.95);
+
 
 }
 
@@ -29,6 +34,9 @@ html {
   font-family: 'lato';
 }
 
+body {
+  background-color: var(--back-principal-color);
+}
 header {
   width: 100%;
   height: 100vh;
@@ -274,7 +282,6 @@ width: 36.8rem;
 }
 
 /* Section "Conheça os Ambientes" */
-
 #conhecaOsAmbientes {
   width: 100%;
   display: flex;
@@ -296,6 +303,7 @@ width: 36.8rem;
 #conhecaOsAmbientes section > div.imgConhecaOsAmbientes {
   width: 50%;
   height: 100%;
+  box-shadow: 0.8rem 0.8rem 0rem var(--box-shadown-card-conhecaos-color);
 }
 .imgConhecaOsAmbientes:nth-child(1) {
   background: linear-gradient(hsla(20, 19%, 15%, 35%), hsla(20, 19%, 15%, 35%)), url('../assets/cards/conhecaOsAmbientes/prod1.jpeg');
@@ -328,6 +336,8 @@ width: 36.8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  color: var(--font-sub3Quarter-Color);
 }
 #conhecaOsAmbientes section > div.text > h4{
   font-size: 5.23rem;
@@ -342,6 +352,78 @@ width: 36.8rem;
   line-height: 118%;
   list-style: disc;
   margin-left: 3.5rem;
+}
 
-  color: var(--font-black-color);
+/* section "inscrevaSe" */
+.inscrevaSe {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 6rem 46.8rem 6rem;
+  position: relative;
+}
+.inscrevaSe > div::before {
+  grid-row: 2;
+  content: '';
+  width: 50%;
+  height: 10.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  background-color: var(--back-green-color);
+}
+.inscrevaSe > div::after {
+  grid-row: 2;
+  content: '';
+  width: 20%;
+  height: 10.5rem;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+
+  background-color: var(--back-green-color);
+}
+
+.inscrevaSe > div {
+  grid-row: 2;
+  width: 100%;
+  height: 34.2rem;
+  display: grid;
+  place-items: center;
+
+  box-shadow: 0.8rem 0.8rem 0rem var(--box-shadown-inscrevase-color);
+  background: linear-gradient(hsla(20, 19%, 15%, 0.75), hsla(20, 19%, 15%, 0.75)), url('../assets/backgrounds/backgroundInscrevaSe.jpg');
+  background-position: center;
+  background-size: cover;
+
+}
+.inscrevaSe > div > div {
+  height: 15.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.inscrevaSe h3 {
+  font-size: 4.5rem;
+  font-weight: bold;
+
+  color: var(--font-white-color);
+}
+.inscrevaSe button {
+  width: 95%;
+  height: 7.8rem;
+
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0rem 0.4rem 0.4rem hsla(0, 0%, 0%, 0.25);
+  font-family: 'lato';
+  font-size: 3.42rem;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: var(--font-white-color);
+  background-color: var(--principal-color);
 }
