@@ -826,3 +826,100 @@ footer>div>p {
     font-weight: 400;
   }
 }
+
+@media(max-width: 430px) {
+  .containerTitleAndDesc {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .containerTitleAndDesc>div:first-child>h1:first-child {
+    font-size: 5rem;
+  }
+
+  .containerTitleAndDesc>div:first-child>p:last-child {
+    font-size: 3.2rem;
+  }
+
+  .containerTitleAndDesc>div:last-child>h4:first-child {
+    font-size: 3rem;
+  }
+
+  .containerTitleAndDesc>div:last-child>p:last-child {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+  }
+  .containerForm{
+    width: 90%;
+    height: 90%;
+  }
+  .containerForm>form>h3, .containerForm>form>div, .containerForm>form>input:last-child {
+    width: calc(100% - (2rem * 2));
+    align-self: center;
+  }
+  .containerForm>form>h3 {
+    font-size: 2.9rem;
+  }
+  .containerForm>form>div {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerForm>form>div>input {
+    height: 4rem;
+    margin-top: 0.5rem;
+  }
+  
+  .containerForm>form>div>label {
+    font-size: 2.2rem;
+    font-weight: bold;
+  
+    color: var(--font-subQuarter-Color);
+  }
+  .containerForm>form>div>input::placeholder, .containerForm>form>div>input {
+    font-size: 2.2rem;
+    text-indent: 0.8rem;
+  }
+  
+  .containerForm>form>input:last-child {
+    height: 7rem;
+    font-size: 2.5rem;
+  }
+  
+  
+
+  
+  #conhecaOsAmbientes section>div.title {
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  .inscrevaSe h3 {
+    font-size: 3.5rem;
+  }
+
+  .inscrevaSe button {
+    width: 95%;
+    height: 7.8rem;
+
+    font-size: 3rem;
+  }
+  
+  footer>div>h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  footer>div>h4 {
+    font-size: 3.6rem;
+    font-weight: 400;
+  }
+
+  footer>div>p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
