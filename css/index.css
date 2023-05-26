@@ -522,19 +522,21 @@ footer>div>p {
   #oQueVaiAperender figure {
     width: 32.8rem;
   }
-  
+
   #oQueVaiAperender figure>div {
     width: 100%;
     height: 32.8rem;
   }
 }
-@media(max-width: 1350px) {
-header {
-  display: flex;
-  justify-content: center;
-  
 
-}
+@media(max-width: 1350px) {
+  header {
+    display: flex;
+    justify-content: center;
+
+
+  }
+
   header>section {
     display: flex;
     flex-direction: column;
@@ -543,8 +545,8 @@ header {
     grid-template-columns: none;
     grid-template-rows: none;
   }
-  
-  
+
+
   .containerTitleAndDesc {
     grid-column: 0;
     grid-row: 0;
@@ -598,38 +600,42 @@ header {
 
 
 
-  
+
   #oQueVaiAperender figure {
     width: 29.8rem;
   }
-  
+
   #oQueVaiAperender figure>div {
     width: 100%;
     height: 29.8rem;
   }
 }
+
 @media(max-width: 1250px) {
   html {
     font-size: 55%;
-  }  
+  }
+
   #oQueVaiAperender {
     height: 65rem;
   }
+
   #oQueVaiAperender figure {
     width: 25.8rem;
     height: 40.5rem;
   }
-  
+
   #oQueVaiAperender figure>div {
     width: 100%;
     height: 25.8rem;
   }
-  
+
   #oQueVaiAperender>div:first-child {
     font-size: 3.2rem;
     font-weight: bold;
     text-transform: uppercase;
   }
+
   #oQueVaiAperender figure>figcaption {
     width: 100%;
     font-size: 2.2rem;
@@ -637,16 +643,19 @@ header {
   }
 
 }
+
 @media(max-width: 1010px) {
   html {
     font-size: 50%;
   }
 }
+
 @media(max-width: 910px) {
+  
   html {
     font-size: 46%;
   }
-  
+
   #conhecaOsAmbientes section>div.text>h4 {
     font-size: 4.8rem;
   }
@@ -654,10 +663,18 @@ header {
   #conhecaOsAmbientes section>div.text>ul {
     font-size: 2.5rem;
   }
+  #conhecaOsAmbientes>div {
+    width: calc(100% - (5rem * 2));
 
 }
+}
+
 @media(max-width: 815px) {
   
+  html {
+    font-size: 50%;
+  }
+
   #oQueVaiAperender {
     height: 135rem;
     display: flex;
@@ -668,9 +685,144 @@ header {
 
   #oQueVaiAperender>div:last-child {
     height: auto;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
+
+
+  #local {
+    height: 69rem;
   }
+
+  #local>.containerLocal {
+    width: 100%;
+    height: 45rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+  }
+
+  .containerLocal>div:first-child>h3 {
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  .containerLocal>div:first-child>p {
+    display: none;
+  }
+
+  .containerLocal>div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containerLocal>div:last-child>img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .containerLocal>div:last-child>p {
+    font-weight: 400;
+
+  }
+
+
+
+
+
+  #conhecaOsAmbientes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #conhecaOsAmbientes>div {
+    width: calc(100% - (5rem * 2));
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  
+  #conhecaOsAmbientes>div>section {
+    width: 100%;
+    height: calc(35.2rem * 2);
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  #conhecaOsAmbientes section:nth-child(2) {
+    flex-direction: column;
+  }
+  #conhecaOsAmbientes section>div.imgConhecaOsAmbientes {
+    width: 100%;
+    height: 50rem;
+  }
+  
+  #conhecaOsAmbientes section>div.title {
+    width: 85%;
+    height: 100%;
+  }
+  
+  #conhecaOsAmbientes section>div.text {
+    width: 50%;
+    height: 100%;
+    transform: translateX(14%);
+  
+    color: var(--font-sub3Quarter-Color);
+  }
+  
+  #conhecaOsAmbientes section>div.text>h4 {
+    font-size: 5.23rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+  
+    color: var(--font-principal-color);
+  }
+  
+  #conhecaOsAmbientes section>div.text>ul {
+    font-size: 2.9rem;
+    font-weight: 400;
+    line-height: 118%;
+    list-style: disc;
+    margin-left: 3.5rem;
+  }
+
+  
+  footer>div>h3 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  footer>div>h4 {
+    font-size: 3.6rem;
+    font-weight: 400;
+  }
+
+  footer>div>p {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}
+@media(max-width: 564px) {
+  footer>div>h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  footer>div>h4 {
+    font-size: 3.6rem;
+    font-weight: 400;
+  }
+
+  footer>div>p {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+}
