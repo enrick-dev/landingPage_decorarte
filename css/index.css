@@ -611,6 +611,9 @@ header {
 @media(max-width: 1250px) {
   html {
     font-size: 55%;
+  }  
+  #oQueVaiAperender {
+    height: 65rem;
   }
   #oQueVaiAperender figure {
     width: 25.8rem;
@@ -643,4 +646,31 @@ header {
   html {
     font-size: 46%;
   }
+  
+  #conhecaOsAmbientes section>div.text>h4 {
+    font-size: 4.8rem;
+  }
+
+  #conhecaOsAmbientes section>div.text>ul {
+    font-size: 2.5rem;
+  }
+
 }
+@media(max-width: 815px) {
+  
+  #oQueVaiAperender {
+    height: 135rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #oQueVaiAperender>div:last-child {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  }
